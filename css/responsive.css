@@ -1,0 +1,97 @@
+@media only screen and (max-width: 360px),
+(min-device-width: 360px) and (max-device-width: 1040px) {
+    main {
+        width: 100%;
+    }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .catalog tr {
+        line-height: 1.5em;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+        width: 100%;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .catalog td {
+        width: auto;
+    }
+
+    table.catalog th, table.catalog td {
+        width: 100% !important;
+    }
+
+    table.catalog tbody {
+        height: 100%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before {
+        content: "PROJECT NAME";
+    }
+
+    td:nth-of-type(2):before {
+        content: "DUE DATE";
+    }
+
+    td:nth-of-type(3):before {
+        content: "CREATED";
+    }
+
+    td:nth-of-type(4):before {
+        content: "MEMBERS";
+    }
+
+    td:nth-of-type(5):before {
+        content: "TYPE";
+    }
+
+    td:nth-of-type(6):before {
+        content: "STATUS";
+    }
+
+    td:nth-of-type(7):before {
+        content: "CUSTOMER";
+    }
+}
+
+tbody tr:hover {
+    background-color: initial;
+}
+
+tbody td:hover {
+    background-color: #353e44;
+}
+
+.remove-btn {
+    padding-left: 0;
+    background-position-x: 50%;
+}
+
+button.delete-item {
+    margin-left: 50%;
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Infopulse-Courses-Dashboard</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 360px) and (max-device-width: 1040px)" href="css/responsive.css">
+    <link rel="stylesheet" href="js\Pikaday\css\pikaday.css">
+</head>
+<body>
+    <main>
+        <menu class="search-block">
+            <button type="submit" class="show-search-block"></button>
+            <form class="search-data" id="form">
+                <input placeholder="SEARCH BY NAME:" onfocus="this.placeholder = 'SEARCH BY NAME'" type="search" class="standard-item search-input" id="searchByName">
+                <fieldset class="checkboxes-area" id="checkboxesArea">
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="Web" value="Web" id="web">
+                            <label for="web">WEB</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="Desktop" value="Desktop" id="desktop">
+                            <label for="desktop">DESKTOP</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="Mobile" value="Mobile" id="mobile">
+                            <label for="mobile">MOBILE</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="Support" value="Support" id="support">
+                            <label for="support">SUPPORT</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="text" id="datepicker" value="" placeholder="SEARCH BY DATE" class="standard-item date-item">
+            </form>
+        </menu>
+        <table class="catalog" id="catalog">
+        </table>
+    </main>
+    <section class="create-item-section">
+        <form action="" class="create-form">
+            <input type="text" placeholder="PROJECT NAME" onfocus="this.placeholder = ''" class="standard-item">
+            <input type="text" placeholder="DUE DATE" onfocus="this.placeholder = ''" class="standard-item date-item">
+            <input type="text" placeholder="CREATED" onfocus="this.placeholder = ''" class="standard-item date-item">
+            <input type="text" placeholder="MEMBERS:" onfocus="this.placeholder = ''" class="standard-item">
+            <select name="type" class="standard-item" title="Select type">
+                <optgroup>
+                    <option value="">TYPE</option>
+                    <option value="">TYPE2</option>
+                    <option value="">TYPE3</option>
+                </optgroup>
+            </select>
+            <select name="customer" class="standard-item" title="Select customer">
+                <option value="">CUSTOMER:</option>
+                <option value="">JOHN</option>
+                <option value="">DAVID</option>
+                <option value="">BILL</option>
+                <option value="">ALEHANDRO ROHAS</option>
+            </select>
+            <button class="create-btn">CREATE</button>
+        </form>
+    </section>
+    <footer class="dashboard-footer">
+        <p>PROJECTS DASHBOARD @ 2016</p>
+    </footer>
+    <script type="text/javascript" src="js/main3.js"></script>
+    <script type="text/javascript" src="js/Moment/moment.js"></script>
+    <script type="text/javascript" src="js/Pikaday/pikaday.js"></script>
+    <script>
+        var picker = new Pikaday({ field: document.getElementById('datepicker') });
+//        var picker = new Pikaday({
+//            field: document.getElementById('datepicker'),
+//            format: 'D MMM YYYY',
+//            onSelect: function() {
+//                console.log(this.getMoment().format('D-M-YYYY'));
+//            }
+//        });
+    </script>
+</body>
+</html>

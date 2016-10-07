@@ -1,0 +1,322 @@
+body, main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: inherit;
+    background-color: black;
+    overflow: hidden;
+}
+
+body {
+    background: black;
+}
+
+main {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+input {
+    color: white;
+}
+
+form .standard-item {
+    background-color: #221203;
+    border: none;
+    border-bottom: 2px solid #d56f15;
+    width: 91%;
+    padding: 7% 0 7% 3%;
+    margin: 0 0 10% 0;
+}
+
+input::-webkit-input-placeholder {
+    color: #979390;
+}
+
+input::-moz-placeholder {
+    color: #979390;
+}
+
+input:-moz-placeholder {
+    color: #979390;
+}
+
+input:-ms-input-placeholder {
+    color: #979390;
+}
+
+.create-form {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.create-form input:first-child {
+    margin-top: 35%;
+}
+
+.search-block {
+    background-color: black;
+    padding: 0 0 0 15px;
+    width: 22%;
+    margin: 1% 2% 0% 0%;
+}
+
+.create-item-section {
+    background-color: black;
+    width: 17.3%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    padding: 16px 0px 0 20px;
+    display: none;
+}
+
+.show-search-block {
+    width: 40px;
+    height: 30px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url("../img/left-menu-btn.png");
+    margin: 0 0 79px -88%;
+    cursor: pointer;
+}
+
+.checkboxes-area {
+    color: white;
+    background-color: #0d0d0d;
+    width: 87%;
+    display: flex;
+    margin: 0 0 26px 20px;
+}
+
+:root input[type=checkbox] {
+    position: absolute;
+    left: -1000em;
+}
+
+:root input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 35px;
+    margin: 0 .5em 0 0;
+    background: url("../img/check.png") no-repeat 0 0;
+    vertical-align: bottom;
+    position: relative;
+    bottom: -10px;
+    cursor: pointer;
+}
+
+:root input[type=checkbox]:checked + label:before {
+    background-position: 0 -35px;
+}
+
+.search-data {
+    margin: 0;
+}
+
+.checkboxes-area ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 14px 12px 13px 7px;
+}
+
+.checkboxes-area li {
+    margin: 0 0 30px 0;
+}
+
+/*Items table*/
+table.catalog {
+    display: table;
+    width: 75%;
+    height: 100%;
+}
+
+table.catalog thead, table.catalog tbody {
+    float: left;
+    width: 98%;
+}
+
+table.catalog tbody {
+    overflow: auto;
+    height: 90%;
+}
+
+table.catalog tr {
+    display: table;
+    text-align: left;
+}
+
+table.catalog th, table.catalog td {
+    width: 185px;
+}
+
+.catalog {
+    font-family: 'Calibri', sans-serif;
+    color: white;
+    background-color: #0a0b0d;
+    margin: 0 0 2% 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-collapse: collapse;
+    position: relative;
+    min-height: calc(99vh - 63px);
+}
+
+.catalog:after {
+content: '';
+position: absolute;
+background-color: inherit;
+width: 1.5%;
+top: 0;
+left: -1%;
+}
+
+tbody > tr:nth-of-type(odd) {
+background: #0f1012;
+}
+
+.catalog td:first-child {
+line-height: 2em;
+border-right: 1px solid #737374;
+margin: 0% 0% 13px 0%;
+width: 25.2%;
+}
+
+.catalog th:first-child {
+line-height: 2em;
+border-right: 1px solid #714a1e;
+width: 25%;
+}
+
+.catalog th {
+color: #e67817;
+vertical-align: middle;
+}
+
+.catalog tr {
+line-height: 4.6em;
+}
+
+tbody tr:hover {
+background-color: #979390;
+}
+
+.catalog thead {
+border-bottom: 2px solid #737374;
+}
+
+.delete-item {
+border: none;
+background: url("../img/recycle.png") no-repeat;
+height: 50px;
+width: 43px;
+cursor: pointer;
+}
+
+.dashboard-footer {
+width: 100%;
+padding: 17px;
+background-color: #e67817;
+color: white;
+font-weight: 400;
+font-family: 'Calibri', sans-serif;
+}
+
+/*END Items Table*/
+
+.search-input {
+    background: url("../img/lupa.png") no-repeat 99% 3%;
+    background-size: 37px;
+}
+
+.date-item {
+    background: url("../img/date-icon.png") no-repeat 99% 5%;
+    background-size: 37px;
+}
+
+.create-item-btn {
+    background: url("../img/create-icon.png") no-repeat;
+    width: 47px;
+    cursor: pointer;
+    margin-right: 44px;
+}
+
+section input::-webkit-input-placeholder {
+    color: white;
+}
+
+section input::-moz-placeholder {
+    color: white;
+}
+
+section input:-moz-placeholder {
+    color: white;
+}
+
+section input:-ms-input-placeholder {
+    color: white;
+}
+
+select {
+    color: white;
+    text-align: center;
+}
+
+option {
+    padding: 1%;
+}
+
+.create-btn {
+    border: none;
+    background: #e67817;
+    padding: 6% 0% 6% 6%;
+    text-align: -webkit-left;
+    color: white;
+    font-weight: bold;
+    width: 87%;
+    cursor: pointer;
+}
+
+.hidden {
+    transition: margin 1s cubic-bezier(0.63, 0.07, 0.36, 1);
+    margin-left: -400px;
+}
+
+/*Calendar*/
+.pika-lendar, .pika-table tr td {
+    background: #f5f5f5;
+}
+
+.pika-table {
+    width: 100%;
+}
+
+/*Scrollbar for Webkit*/
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d56f15;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background: #373839;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
